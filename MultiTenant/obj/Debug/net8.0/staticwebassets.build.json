@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9Gw4/6MHIKExZ7LKNs5Vua2Qe8ybUApfElZLr0QCvYE=",
+  "Source": "MultiTenant",
+  "BasePath": "_content/MultiTenant",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
