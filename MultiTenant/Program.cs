@@ -15,7 +15,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Add MultiTenant
 builder.Services.AddMultiTenant<TenantInfo>()
-                .WithHostStrategy()
+                // Set the tenant manually
+                .WithStaticStrategy("acme")
                 .WithConfigurationStore();
 
 var app = builder.Build();
@@ -40,10 +41,10 @@ app.UseHttpsRedirection();
 
 app.UseMultiTenant();
 
-app.MapGet("/tenant", (HttpContext httpContext) =>
+app.MapGet("/getTenant", (HttpContext httpContext) =>
 {
     var TenantInfo = httpContext.GetMultiTenantContext<TenantInfo>()?.TenantInfo;
-    return TenantInfo;
+    return TenantInfo.Id;
 })
 .WithName("GetTenant")
 .WithOpenApi();

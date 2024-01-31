@@ -271,3 +271,4 @@
 /Users/georgek/source/repos/MultiTenant/MultiTenant/obj/Debug/net8.0/MultiTenant.pdb
 /Users/georgek/source/repos/MultiTenant/MultiTenant/obj/Debug/net8.0/MultiTenant.genruntimeconfig.cache
 /Users/georgek/source/repos/MultiTenant/MultiTenant/obj/Debug/net8.0/ref/MultiTenant.dll
+/Users/georgek/source/repos/MultiTenant/MultiTenant/obj/Debug/net8.0/MultiTenant.sourcelink.json
